@@ -11,9 +11,15 @@ body {
 }
 
 /* Headings */
-h1, h2 {
+h1, h2, h3, h4{
     font-family: 'Pacifico', cursive;
     font-weight: normal;
+}
+
+.link{
+    text-decoration: none;
+    color: #fdebf3;
+    text-align: center;
 }
 
 h1 {

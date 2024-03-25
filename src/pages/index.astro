@@ -1,72 +1,130 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 const pageTitle = "Shaurya | Portfolio";
 ---
+
 <Layout pageTitle={pageTitle}>
     <div class="gif">
-        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp"/>
+        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp" />
     </div>
     <h1>Shaurya Srivastav</h1>
-    <small>Computer Science and Engineering Student @ UC Davis 2026</small>
+    <small>Computer Science @ UC Davis 2025</small>
     <h2>About</h2>
     <p>
-       Greetings! I'm Shaurya Srivastav, a UC Davis sophomore 
-       pursuing dual majors in Computer Science and Electrical 
-       Engineering. Beyond my academic pursuits, I have a flair 
-       for culinary excellence, emphasizing minimal food wastage 
-       – a trait reminiscent of Sanji from One Piece. 🏴‍☠️ Outside 
-       the kitchen, I'm deeply engaged in technology and artificial 
-       intelligence.
+        Greetings! I'm Shaurya Srivastav, a UC Davis sophomore pursuing a major
+        in Computer Science @ University of California, Davis (Go Aggies!!).
+        Beyond my academic pursuits, I have a flair for recreating food from
+        famous Animes, emphasizing minimal food wastage – a trait of Sanji
+        (though Zoro > Sanji) from One Piece 🏴‍☠️🏴‍☠️. Outside the kitchen, I'm
+        deeply engaged in the intersection of Full Stack Development and
+        Artificial Intelligence.
     </p>
 
     <p>
+        <h2>
+            I'm currently involved in notable research projects at UC Davis:
+        </h2>
 
-    
-    <h2>I'm currently involved in notable research projects at UC Davis:</h2>
-    
-    <ul>
+        <ul>
+            <li>
+                <h3>
+                    Project 1: Semantic Patent Search (Semantor) (Dec 2022 -
+                    Present)
+                </h3>
+                <h3>
+                    <a class="link" href="http://150.136.47.221/"
+                        >Click Here for the Demo!</a
+                    >
+                </h3>
+                <p>
+                    <ul>
+                        <li>
+                            Optimized opensource LLMs (ex: LLama, Mistral, BERT)
+                            for advanced NLP tasks, demonstrating expertise in
+                            both model fine-tuning and the efficient handling of
+                            large-scale datasets, emphasizing the ability to
+                            scale and deploy models effectively.
+                        </li>
+                        <li>
+                            Created a semantic searching system using MPNET-v2
+                            from HuggingFace and Meta Faiss. Developed
+                            user-friendly interfaces (MERN stack) alongside
+                            scalable backend systems to process and display
+                            results.
+                        </li>
+                        <li>
+                            Utilized SparkSQL, PyTorch, and React to develop and
+                            deploy on Google Cloud, scalable machine learning
+                            pipelines, enabling efficient processing and
+                            analysis of extensive datasets for high-impact AI
+                            projects.
+                        </li>
+                        <li>
+                            Created datasets through Python-based web crawling,
+                            integrated USPTO API and RESTful APIs, facilitating
+                            rigorous machine learning model testing,
+                            optimization, and fine-tuning for patent retrieval
+                            precision.
+                        </li>
+                    </ul>
+                </p>
+            </li>
 
-    <li>
-    <h3>Project 1: Semantic Patent Search (Dec 2022 - Present)</h3>
+            <li>
+                <h3>
+                    Project 2: Large Language Model for Code Analysis: Do LLMs
+                    really do their job? (Co-author)
+                </h3>
+                <h3>Accepted to: Usenix 2024 Conference!!</h3>
+                <h3>
+                    <a class="link" href="https://arxiv.org/abs/2310.12357"
+                        >Click Here for paper!</a
+                    >
+                </h3>
+                <p>
+                    <ul>
+                        <li>
+                            Developed and implemented a comprehensive data
+                            pipeline in Python for automating the end-to-end
+                            process of web scraping, data cleaning, and
+                            formatting.
+                        </li>
+                        <li>
+                            Utilized Hugging Face's Transformers library to
+                            fine-tune using peft and qlora, opensource LLMs for
+                            optimizing performance for code summarization tasks.
+                        </li>
+                        <li>
+                            Created a script to run inference on Obfuscated code
+                            using Llama 2, and StarChatBeta. Each code snippet
+                            is fed to the model, if the code snippet is greater
+                            than 4096 tokens for llama 2 or 8096 tokens for
+                            StarChatBeta, then the code is chunked and fed into
+                            the model. The program utilizes CUDA and 8_bit
+                            quantization, to load in the model onto all of
+                            graphics card. The model runs inference using the
+                            code snippets and outputs the Analysis which is then
+                            compared to a ground truth and given a score based
+                            on the similarity score (n-gram).
+                        </li>
+                    </ul>
+                </p>
+            </li>
+        </ul>
+    </p>
+
     <p>
-        I optimized semantic patent search by implementing the MPNET 
-        model, enhancing vector similarity calculations with Faiss. 
-        This project also involved developing a patent search engine, 
-        deploying it on AWS, and curating datasets through web crawling 
-        and API integration.
-        </p>
-    
-    </li>
-
-    <li>
-        <h3>Project 2: Trojan and Backdoor Detection for NLP Models.</h3>
-        <p>
-        My responsibilities here included generating poisoned data, 
-        deploying models on a local "Rubi Chest" server, and running inference to 
-        identify potential triggers for trojan attacks. Technologies used 
-        encompass React, Hugging Face, Python, and more.
-        </p>
-    </li>
-
-    <li>
-        <h3>Project 3: Code Deobfustication and Analysis using ChatGPT, llama 2, and StarChatBeta</h3>
-        <p>
-        I created a script to run infrence on Obfusticated code using Llama 2, and StarChatBeta.
-        Each code snippet is fed to the model, if the code snippet is greater than 4096 tokens for llama 2 or 8096 tokens for StarChatBeta,
-        Then the code is chunked and fed into the model. The program utilizes CUDA and 8_bit quantization, to load in the model onto all of graphics card. 
-        The model runs inference using the code snipets and outputs the Analysis which is then compared to a ground truth and given a score based on the similarity score (n-gram).    
+        My broader skill set includes proficiency in full-stack development,
+        encompassing front-end and back-end technologies, database management,
+        security, and optimization. My skills encompass a wide range of
+        libraries and cloud-based tools, including machine learning libraries
+        like NumPy, Pytorch, TensorFlow, and Hugging Face, Sci-kit. I'm
+        proficient in various languages, including Python, C/C++, and
+        JavaScript, MYSQL, Postgres and I have experience with Elastic Stack,
+        Angular, React, and more. Cloud platforms like Google Cloud, AWS, and
+        Firebase are also in my toolkit.
     </p>
-    </li>
-    </ul>
-    
-    </p>
-    
 
-    <p>
-    My broader skill set includes proficiency in full-stack development, encompassing front-end and back-end technologies, database management, security, and optimization.
-   My skills encompass a wide range of libraries and cloud-based tools, including machine learning libraries like NumPy, Pytorch, TensorFlow, and Hugging Face, Sci-kit. I'm proficient in various languages, including Python, C/C++, and JavaScript, MYSQL, Postgres and I have experience with Elastic Stack, Angular, React, and more. Cloud platforms like Google Cloud, AWS, and Firebase are also in my toolkit.
-    </p>
-   
     <div class="button">
         <a href="/works/">
             <button>My portfolio</button>
@@ -74,29 +132,125 @@ const pageTitle = "Shaurya | Portfolio";
     </div>
     <h2>Skills</h2>
     <div class="link-images">
-        <img width="46" height="46" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-        <img width="46" height="46" alt="C/C++" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"/>
-        <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-        <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"/>
-        <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"/>
-        <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"/>
-        <img width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
-        <img width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
-        <img width="46" height="46" alt="PostGres" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"/>
-        <img width="46" height="46" alt="mysql" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
-        <img width="46" height="46" alt="Google Cloud" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"/>
-        <img width="46" height="46" alt="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
-        <img width="46" height="46" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-        <img width="46" height="46" alt="AWS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"/>
-        <img width="46" height="46" alt="OpenCV" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"/>
-        <img width="46" height="46" alt="Pytoch" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>
-        <img width="46" height="46" alt="NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+        <img
+            width="46"
+            height="46"
+            alt="Python"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="C/C++"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="JavaScript"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="TypeScript"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="Angular"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="Bootstrap"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="CSS"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="HTML"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="PostGres"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="mysql"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="Google Cloud"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="Firebase"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="React"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="AWS"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="OpenCV"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="Pytoch"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+        />
+        <img
+            width="46"
+            height="46"
+            alt="NodeJS"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        />
     </div>
     <h2>Interests</h2>
     <p>
-        My passions revolve around the dynamic world of full-stack development and artificial intelligence, but it's more than just a professional interest – it's a genuine love for what I do. I get a real thrill out of building complete solutions, from the nuts and bolts of backend development to creating user-friendly interfaces that make technology accessible to everyone.
-
-And when it comes to artificial intelligence, I'm endlessly curious. I'm always exploring new frontiers in machine learning and natural language processing, not just as a technical pursuit, but because I'm genuinely fascinated by the possibilities. It's this blend of creative problem-solving and a deep appreciation for AI that keeps me excited about the projects I undertake. In essence, I'm on a journey to develop applications that not only harness the power of AI but also provide meaningful, user-friendly experiences that can make a difference in people's lives.
+        My passions revolve around the dynamic world of full-stack development
+        and artificial intelligence, but it's more than just a professional
+        interest – it's a genuine love for what I do. I get a real thrill out of
+        building complete solutions, from the nuts and bolts of backend
+        development to creating user-friendly interfaces that make technology
+        accessible to everyone. And when it comes to artificial intelligence,
+        I'm endlessly curious. I'm always exploring new frontiers in machine
+        learning and natural language processing, not just as a technical
+        pursuit, but because I'm genuinely fascinated by the possibilities. It's
+        this blend of creative problem-solving and a deep appreciation for AI
+        that keeps me excited about the projects I undertake. In essence, I'm on
+        a journey to develop applications that not only harness the power of AI
+        but also provide meaningful, user-friendly experiences that can make a
+        difference in people's lives.
     </p>
 </Layout>
 <style>
@@ -105,20 +259,24 @@ And when it comes to artificial intelligence, I'm endlessly curious. I'm always 
         background-color: #584966;
         color: #fdebf3;
         border-radius: 6px;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         font-weight: 600;
         padding: 0.3em 0.6em 0.2em;
     }
 
     /* Button */
     button {
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0);
         border: 2px solid #78c2ad;
         border-radius: 8px;
         color: #78c2ad;
-        font: 600 16px 'Josefin Sans', sans-serif;
+        font:
+            600 16px "Josefin Sans",
+            sans-serif;
         padding: 8px 16px;
-        transition: background-color 0.4s, color 0.4s;
+        transition:
+            background-color 0.4s,
+            color 0.4s;
     }
 
     button:hover {

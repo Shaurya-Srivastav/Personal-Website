@@ -14,20 +14,17 @@ const pageTitle = "Posts";
             href="https://arxiv.org/abs/2310.12357"
             image="https://upload.wikimedia.org/wikipedia/commons/7/7a/ArXiv_logo_2022.png"
             title="Large Language Models for Code Analysis: Do LLMs Really Do Their Job?"
-            body={`Large language models (LLMs) have demonstrated significant potential in the 
-            realm of natural language understanding and programming code processing tasks. 
-            Their capacity to comprehend and generate human-like code has spurred research 
-            into harnessing LLMs for code analysis purposes. However, the existing body of 
-            literature falls short in delivering a systematic evaluation and assessment of 
-            LLMs' effectiveness in code analysis, particularly in the context of obfuscated 
-            code.
-            This paper seeks to bridge this gap by offering a comprehensive evaluation of LLMs' 
-            capabilities in performing code analysis tasks. Additionally, it presents real-world 
-            case studies that employ LLMs for code analysis. Our findings indicate that LLMs can 
-            indeed serve as valuable tools for automating code analysis, albeit with certain 
-            limitations. Through meticulous exploration, this research contributes to a deeper 
-            understanding of the potential and constraints associated with utilizing LLMs in code 
-            analysis, paving the way for enhanced applications in this critical domain.`}
+            body={`Large language models (LLMs) have demonstrated significant potential in natural language understanding and programming code processing tasks. This paper offers a comprehensive evaluation of LLMs' effectiveness in code analysis, particularly in the context of obfuscated code. Through a series of Institutional Review Board (IRB)-approved real-world tests, our AI-enabled spear phishing framework achieved varying success rates, highlighting both the capabilities and limitations of LLMs in enhancing and scaling phishing attacks. We also discuss ethical considerations, limitations, and defense strategies to guard against such malicious uses of AI.`}
+        />
+    </ul>
+
+    <h2>Additional Research</h2>
+    <ul role="list" class="link-card-grid">
+        <Card
+            href="https://drive.google.com/file/d/1HeLqe2Jz8U7XHVQLe5XEynzRTHioYgQS/view?usp=sharing"
+            image="https://upload.wikimedia.org/wikipedia/commons/7/7a/ArXiv_logo_2022.png"
+            title="Enhancing Spear-Phishing Attacks with AI"
+            body={`Exploring the intersection of AI and cybersecurity, this paper presents a case study on leveraging machine learning and LLMs to scale spear-phishing attacks. Through an AI-enabled attack generation framework, we conducted real-world tests demonstrating the viability of advanced phishing strategies. The study also delves into ethical considerations and proposes defense mechanisms to mitigate such AI-driven threats.`}
         />
     </ul>
 
@@ -36,10 +33,10 @@ const pageTitle = "Posts";
         <Card
             href="https://medium.com/@ssrivastav_46455/unveiling-the-mathematics-behind-transformer-models-shaurya-srivastav-2fe1e47d20f9"
             image="https://miro.medium.com/v2/resize:fit:1200/0*FSZ330S1hKorTBOn.png"
-            title="Mathematics Behind Transformer Models | Views: 1.1K"
+            title="Mathematics Behind Transformer Models | Views: 2.2K Reads: 1.1k"
             body="Unravel the mathematical intricacies powering Transformer models, the driving force behind modern natural language processing breakthroughs."
         />
-       <Card
+        <Card
             href="https://medium.com/@ssrivastav_46455/adversarial-attacks-on-nlp-models-guarding-against-trojan-threats-shaurya-srivastav-4c1966677d36"
             image="https://miro.medium.com/v2/resize:fit:1200/0*FSZ330S1hKorTBOn.png"
             title="Adversarial Attacks on NLP Models"
@@ -52,7 +49,9 @@ const pageTitle = "Posts";
             body="Unlock the secrets of efficient coding by exploring common data structures through the delicious lens of cooking."
         />
     </ul>
-   <!---- <h2>YouTube</h2>
+
+    <!-- Uncomment and update the YouTube section if needed in the future
+    <h2>YouTube</h2>
     <ul role="list" class="link-card-grid">
         <Card
             href="https://www.youtube.com/"
@@ -66,5 +65,104 @@ const pageTitle = "Posts";
             title="Video 2"
             body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
         />
-    </ul>----!>
+    </ul>
+    -->
+
+    <h2>Contact Me</h2>
+    <p>
+        Feel free to reach out through <a href="mailto:ssrivastav@ucdavis.edu">email</a> or connect with me on <a href="https://www.linkedin.com/in/shauryasrivastav/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    </p>
+
+    <div class="github-link">
+        <a href="https://github.com/Shaurya-Srivastav" target="_blank" rel="noopener noreferrer">
+            <img 
+                width="100" 
+                height="100" 
+                alt="GitHub Icon" 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+                style="width: 100px; height: 100px;"/>
+        </a>
+        <p>Check out all my projects on GitHub!</p>
+    </div>
+
+    <style>
+        /* Existing CSS */
+        /* small */
+        small {
+            background-color: #584966;
+            color: #fdebf3;
+            border-radius: 6px;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 600;
+            padding: 0.3em 0.6em 0.2em;
+        }
+
+        /* Button */
+        button {
+            background: rgba(0, 0, 0, 0);
+            border: 2px solid #78c2ad;
+            border-radius: 8px;
+            color: #78c2ad;
+            font:
+                600 16px "Josefin Sans",
+                sans-serif;
+            padding: 8px 16px;
+            transition:
+                background-color 0.4s,
+                color 0.4s;
+        }
+
+        button:hover {
+            background-color: #78c2ad;
+            color: #fdebf3;
+            cursor: pointer;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        /* Skill images */
+        .link-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .github-link {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .github-link img {
+            transition: transform 0.3s;
+        }
+
+        .github-link img:hover {
+            transform: scale(1.1);
+        }
+
+        .github-link p {
+            margin-top: 0.5em;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .link-card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .github-link img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .github-link p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </Layout>

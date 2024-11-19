@@ -1,258 +1,138 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const pageTitle = "Shaurya | Portfolio";
+const pageTitle = "Shaurya Srivastav | Portfolio";
 ---
 
 <Layout pageTitle={pageTitle}>
     <div class="gif">
-        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp" />
+        <img width="300" height="259" alt="Space Animation" src="/space.webp" />
     </div>
     <h1>Shaurya Srivastav</h1>
-    <small>Computer Science @ UC Davis 2025</small>
+    <small>Computer Science @ UC Davis, Class of 2025</small>
+    
     <h2>About</h2>
     <p>
-        Greetings! I'm Shaurya Srivastav, a UC Davis sophomore pursuing a major
-        in Computer Science @ University of California, Davis (Go Aggies!!).
-        Beyond my academic pursuits, I have a flair for recreating food from
-        famous Animes, emphasizing minimal food wastage – a trait of Sanji
-        (though Zoro > Sanji) from One Piece 🏴‍☠️🏴‍☠️. Outside the kitchen, I'm
-        deeply engaged in the intersection of Full Stack Development and
-        Artificial Intelligence.
-    </p>
+        As a software developer, I want to create tools/technology that make people's lives easier. I’ve built applications, with a focus on writing clean, efficient, and maintainable code.  As a colleague, I love asking intriguing questions and contributing positively. I thrive on collaboration and enjoy meaningful discussions with my team. You’ll often find me at lunch grabbing a spot with colleagues, eager to learn about their projects and share ideas.
+        Communication is another strength I bring to the table. I've put a lot of effort into simplifying technical concepts for different audiences. Working with such a diverse group taught me how to break down complex problems and present them in a way that's accessible and impactful.
+  </p>
 
-    <p>
-        <h2>
-            I'm currently involved in notable research projects at UC Davis:
-        </h2>
+    <h2>Experience & Research</h2>
+    <ul>
+        <li>
+            <h3>Data Science and Machine Learning Intern</h3>
+            <h4>United Airlines, Chicago, Illinois</h4>
+            <small>June 2024 - September 2024</small>
+            <ul>
+                <li>Engineered an automated web scraping solution using Python, Selenium, and BeautifulSoup to extract critical operational commands from distributed HTML manuals, saving weeks of manual code discovery.</li>
+                <li>Created a simulation system leveraging Python and Numba to model beverage consumption and stockout rates, reducing inventory costs by 15% (~$750K/year) through automated data reporting and precise per-segment stock tracking.</li>
+                <li>Developed a multi-task classification model using DistillBERT for categorizing flight attendant callouts into 45 labels, achieving 95% accuracy and enhancing catering load optimization, leading to a 10% reduction in understocking incidents.</li>
+            </ul>
+        </li>
 
-        <ul>
-            <li>
-                <h3>
-                    Project 1: Semantic Patent Search (Semantor) (Dec 2022 -
-                    Present)
-                </h3>
-                <h3>
-                    <a class="link" href="http://150.136.47.221/"
-                        >Click Here for the Demo!</a
-                    >
-                </h3>
-                <p>
-                    <ul>
-                        <li>
-                            Optimized opensource LLMs (ex: LLama, Mistral, BERT)
-                            for advanced NLP tasks, demonstrating expertise in
-                            both model fine-tuning and the efficient handling of
-                            large-scale datasets, emphasizing the ability to
-                            scale and deploy models effectively.
-                        </li>
-                        <li>
-                            Created a semantic searching system using MPNET-v2
-                            from HuggingFace and Meta Faiss. Developed
-                            user-friendly interfaces (MERN stack) alongside
-                            scalable backend systems to process and display
-                            results.
-                        </li>
-                        <li>
-                            Utilized SparkSQL, PyTorch, and React to develop and
-                            deploy on Google Cloud, scalable machine learning
-                            pipelines, enabling efficient processing and
-                            analysis of extensive datasets for high-impact AI
-                            projects.
-                        </li>
-                        <li>
-                            Created datasets through Python-based web crawling,
-                            integrated USPTO API and RESTful APIs, facilitating
-                            rigorous machine learning model testing,
-                            optimization, and fine-tuning for patent retrieval
-                            precision.
-                        </li>
-                    </ul>
-                </p>
-            </li>
+        <li>
+            <h3>Generative AI Research Intern</h3>
+            <h4>University of California, Davis</h4>
+            <small>December 2022 - Present</small>
+            <ul>
+                <li>Fine-tuned LLama, WizardLM, and BERT models using Parameter-Efficient Fine-Tuning (PEFT) and Quantized Low-Rank Adaptation (QLoRA), improving scalability and deployment efficiency for datasets exceeding 10 million records.</li>
+                <li>Developed a scalable semantic search engine utilizing Express, React, and Node.js, implementing MPNET-V2 for generating semantic embeddings and integrating Meta Faiss for efficient similarity indexing.</li>
+                <li>Created ML pipelines with SparkSQL and PyTorch hosted on Google Cloud, automating CI/CD processes to enable high-throughput data processing and real-time analytics.</li>
+            </ul>
+        </li>
 
-            <li>
-                <h3>
-                    Project 2: Large Language Model for Code Analysis: Do LLMs
-                    really do their job? (Co-author)
-                </h3>
-                <h3>Accepted to: Usenix 2024 Conference!!</h3>
-                <h3>
-                    <a class="link" href="https://arxiv.org/abs/2310.12357"
-                        >Click Here for paper!</a
-                    >
-                </h3>
-                <p>
-                    <ul>
-                        <li>
-                            Developed and implemented a comprehensive data
-                            pipeline in Python for automating the end-to-end
-                            process of web scraping, data cleaning, and
-                            formatting.
-                        </li>
-                        <li>
-                            Utilized Hugging Face's Transformers library to
-                            fine-tune using peft and qlora, opensource LLMs for
-                            optimizing performance for code summarization tasks.
-                        </li>
-                        <li>
-                            Created a script to run inference on Obfuscated code
-                            using Llama 2, and StarChatBeta. Each code snippet
-                            is fed to the model, if the code snippet is greater
-                            than 4096 tokens for llama 2 or 8096 tokens for
-                            StarChatBeta, then the code is chunked and fed into
-                            the model. The program utilizes CUDA and 8_bit
-                            quantization, to load in the model onto all of
-                            graphics card. The model runs inference using the
-                            code snippets and outputs the Analysis which is then
-                            compared to a ground truth and given a score based
-                            on the similarity score (n-gram).
-                        </li>
-                    </ul>
-                </p>
-            </li>
-        </ul>
-    </p>
+        <li>
+            <h3>Software Engineering Intern</h3>
+            <h4>Sattrix Information Security, Ahmedabad, Gujarat</h4>
+            <small>July 2023 - September 2023</small>
+            <ul>
+                <li>Implemented Deep Packet Inspection using Pydivert to capture and analyze Server Message Block (SMB) traffic, improving detection accuracy of PtH attack signatures by 20%.</li>
+                <li>Integrated Windows Management Instrumentation (WMI) to monitor and correlate system processes with network activities, enhancing the ability to detect and respond to suspicious behaviors indicative of PtH attacks.</li>
+                <li>Designed and developed a Real-Time Web Dashboard using the MERN stack to visualize PtH attack trends and system alerts, resulting in a 15% faster threat response time.</li>
+            </ul>
+        </li>
+    </ul>
 
-    <p>
-        My broader skill set includes proficiency in full-stack development,
-        encompassing front-end and back-end technologies, database management,
-        security, and optimization. My skills encompass a wide range of
-        libraries and cloud-based tools, including machine learning libraries
-        like NumPy, Pytorch, TensorFlow, and Hugging Face, Sci-kit. I'm
-        proficient in various languages, including Python, C/C++, and
-        JavaScript, MYSQL, Postgres and I have experience with Elastic Stack,
-        Angular, React, and more. Cloud platforms like Google Cloud, AWS, and
-        Firebase are also in my toolkit.
-    </p>
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Cupid - Romantic Date Planner</h3>
+            <h3><a class="link" href="https://github.com/Shaurya-Srivastav/Cupid" target="_blank" rel="noopener noreferrer">View on GitHub</a></h3>
+            <ul>
+                <li>Designed and implemented an itinerary optimization algorithm that integrates user preferences with Yelp API data, delivering personalized dining and activity recommendations based on location, interests, and availability.</li>
+                <li>Developed a geospatial routing system using Leaflet.js, optimizing travel time between selected venues by 35% with dynamic route visualization and optimal pathfinding.</li>
+                <li>Engineered efficient RESTful API endpoints with Axios to support high-traffic scenarios and reduce page loading times by 20%, enhancing client-server communication.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Semantor - Patent Semantic Search</h3>
+            <h3><a class="link" href="https://github.com/Shaurya-Srivastav/PriorArtSearchEngine" target="_blank" rel="noopener noreferrer">View on GitHub</a></h3>
+            <ul>
+                <li>Leveraged Microsoft's MPNET model and integrated FAISS to optimize vector similarity computations, improving patent search precision by 25% and reducing retrieval times.</li>
+                <li>Implemented Python-based web scraping and integrated USPTO’s RESTful APIs, increasing the dataset size by 40% for comprehensive patent retrieval.</li>
+                <li>Fine-tuned LLAMA 3-70B and MPNET-Base-V2 models with PyTorch, achieving a 20% improvement in inference speed and utilizing Pinecone for scalable vector database management.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Large Language Model for Code Analysis: Do LLMs Really Do Their Job?</h3>
+            <h3>Co-author | <a class="link" href="https://arxiv.org/abs/2310.12357" target="_blank" rel="noopener noreferrer">Read Paper</a> | Accepted to: Usenix 2024 Conference</h3>
+            <ul>
+                <li>Engineered a multithreaded Python data pipeline utilizing asynchronous I/O for web scraping, dynamic schema validation, and binary serialization, achieving a 40% improvement in data processing efficiency.</li>
+                <li>Optimized transformer models using PEFT and QLoRA, employing precision quantization and low-rank matrix factorization for high-accuracy inference on resource-constrained hardware.</li>
+            </ul>
+        </li>
+    </ul>
 
     <div class="button">
         <a href="/works/">
-            <button>My portfolio</button>
+            <button>My Portfolio</button>
         </a>
     </div>
+
     <h2>Skills</h2>
     <div class="link-images">
-        <img
-            width="46"
-            height="46"
-            alt="Python"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="C/C++"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="JavaScript"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="TypeScript"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="Angular"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="Bootstrap"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="CSS"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="HTML"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="PostGres"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="mysql"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="Google Cloud"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="Firebase"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="React"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="AWS"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="OpenCV"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="Pytoch"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
-        />
-        <img
-            width="46"
-            height="46"
-            alt="NodeJS"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-        />
+        <!-- Programming Languages -->
+        <img width="46" height="46" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+        <img width="46" height="46" alt="C/C++" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+        <img width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+        <img width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+        <img width="46" height="46" alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+
+        <!-- Frameworks & Libraries -->
+        <img width="46" height="46" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+        <img width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
+        <img width="46" height="46" alt="NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+        <img width="46" height="46" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+        <img width="46" height="46" alt="Flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+        <img width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
+
+        <!-- Databases -->
+        <img width="46" height="46" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+        <img width="46" height="46" alt="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" />
+        <img width="46" height="46" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+
+        <!-- Cloud & DevOps -->
+        <img width="46" height="46" alt="Google Cloud" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" />
+        <img width="46" height="46" alt="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+        <img width="46" height="46" alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+        <img width="46" height="46" alt="Kubernetes" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
+
+        <!-- Machine Learning -->
+        <img width="46" height="46" alt="TensorFlow" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />
+        <img width="46" height="46" alt="PyTorch" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" />
+
+        <!-- Others -->
+        <img width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+        <img width="46" height="46" alt="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
     </div>
+
     <h2>Interests</h2>
     <p>
-        My passions revolve around the dynamic world of full-stack development
-        and artificial intelligence, but it's more than just a professional
-        interest – it's a genuine love for what I do. I get a real thrill out of
-        building complete solutions, from the nuts and bolts of backend
-        development to creating user-friendly interfaces that make technology
-        accessible to everyone. And when it comes to artificial intelligence,
-        I'm endlessly curious. I'm always exploring new frontiers in machine
-        learning and natural language processing, not just as a technical
-        pursuit, but because I'm genuinely fascinated by the possibilities. It's
-        this blend of creative problem-solving and a deep appreciation for AI
-        that keeps me excited about the projects I undertake. In essence, I'm on
-        a journey to develop applications that not only harness the power of AI
-        but also provide meaningful, user-friendly experiences that can make a
-        difference in people's lives.
+        I am passionate about the dynamic fields of full-stack development and artificial intelligence. I thrive on building comprehensive solutions that bridge backend efficiencies with intuitive, user-friendly interfaces. My enthusiasm for AI drives me to explore the latest advancements in machine learning and natural language processing, aiming to create applications that are both powerful and accessible. I am dedicated to leveraging technology to make a meaningful impact, whether through optimizing operational processes, enhancing user experiences, or pioneering innovative research.
     </p>
 </Layout>
+
 <style>
     /* small */
     small {
